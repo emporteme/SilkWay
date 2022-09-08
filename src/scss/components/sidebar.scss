@@ -1,0 +1,223 @@
+@use '../libs/variables';
+
+
+// h2 {
+//     font-family: Arial, Helvetica, sans-serif;
+//     padding: 16px 0 18px 16px;
+// }
+
+// .nav {
+//     max-width: 294px;
+//     max-height: 586px;
+//     margin: 100px;
+
+//     background: gainsboro;
+//     border-radius: 5px;
+// }
+
+// .nav ul {
+//     position: relative;
+//     list-style-type: none;
+// }
+
+// .nav ul li a {
+//     display: flex;
+//     align-items: center;
+//     font-family: Arial, Helvetica, sans-serif;
+//     font-size: 1.15rem;
+//     text-decoration: none;
+//     text-transform: capitalize;
+//     color: black;
+//     padding: 9px 16px;
+//     height: 50px;
+//     transition: .5s;
+//     border-radius: 5px;
+// }
+
+// .nav ul li a:hover {
+//     background: rgba(0, 0, 0, 0.7);
+//     color: #fff;
+// }
+
+// .dropdown img {
+//     margin-right: 8px;
+// }
+
+// .nav ul ul {
+//     position: absolute;
+//     left: 294px;
+//     width: 200px;
+//     top: 0;
+//     display: none;
+//     background: ghostwhite;
+//     border-radius: 5px;
+
+// }
+
+// .nav ul .dropdown {
+//     position: relative;
+// }
+
+// .nav ul .dropdown:hover ul {
+//     display: initial;
+// }
+
+// .nav .card {
+//     background: #494A53;
+//     /* Big blocks shadow */
+
+//     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.04);
+//     border-radius: 5px;
+//     padding: 12px;
+//     margin: 18px 16px 16px 16px;
+// }
+
+// .nav .card .card__title {
+//     font-family: Arial, Helvetica, sans-serif;
+//     font-style: normal;
+//     font-weight: 600;
+//     font-size: 22px;
+//     line-height: 32px;
+//     /* identical to box height, or 145% */
+
+
+//     /* Skyline | Alpha 40 */
+
+//     color: #99E4EE;
+// }
+
+// .nav .card .card__text {
+//     font-family: Arial, Helvetica, sans-serif;
+//     font-style: normal;
+//     font-weight: 400;
+//     font-size: 15px;
+//     line-height: 21px;
+//     color: #F4F7FA;
+// }
+
+// .nav .card a {
+//     font-family: Arial, Helvetica, sans-serif;
+//     font-style: normal;
+//     font-size: 13px;
+//     line-height: 24px;
+//     text-align: right;
+//     /* identical to box height, or 185% */
+
+
+//     /* Pearl 4 */
+
+//     color: #CDD5E1;
+// }
+
+
+
+
+.sidebar-wrapper {
+    margin-right: 24px;
+}
+
+.sidebar {
+    max-width: 294px;
+    min-height: 586px;
+    background-color: white;
+    border-radius: 5px;
+    padding: 16px;
+
+    &__title {
+        font-family: Arial, Helvetica, sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 32px;
+        margin-bottom: 10px;
+    }
+}
+
+.options {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    // position: absolute;
+    
+    &__var {
+        position: relative;
+        padding: 9px 0 9px 0;
+    }
+
+    ul {
+        position: absolute;
+        display: none;
+    }
+
+    &__var ul:hover {
+        display: initial;
+    }
+
+    &__var img {
+        object-fit:cover;
+        margin-right: 8px;
+        width: 32px;
+        height: 32px;
+        vertical-align: middle;
+
+    }
+
+    &__var a {
+        font-family: 'Avenir';
+        color: variables.$mid-night;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 20px;
+        text-decoration: none;
+    }
+
+    &__arrow {
+        vertical-align: middle;
+        color: variables.$arrow;
+        font-size: 24px;
+        float: right;
+    }
+}
+
+.sale__card {
+    max-width: 262px;
+    min-height: 136px;
+    background-color: variables.$dark-gray;
+    margin-top: 18px;
+    padding: 12px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.04);
+    font-family: Arial, Helvetica, sans-serif;
+
+    h2 {
+        color: variables.$sky;
+    }
+
+    .sale__text {
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 21px;
+        padding: 6px 0 8px 0;
+    }
+
+    .sale__arrow {
+        font-family: Arial, Helvetica, sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 24px;
+        color: variables.$pearl;
+        text-decoration: none;
+        float: right;
+    }
+
+    .sale__icon {
+        vertical-align: middle;
+        font-size: 18px;
+        color: variables.$pearl;
+    }
+}
